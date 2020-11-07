@@ -1,4 +1,4 @@
-# OnlineAuction
+# OnlineAuction (University of Bologna, IT)
 
 GWT based project using MapDB as a persistent db
 
