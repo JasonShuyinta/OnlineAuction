@@ -1,0 +1,31 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+
+.btnStyle {
+	align: center;
+	background-color: #008CBA;
+	font-size: 16px;
+	border-radius: 12px;
+	color: #fff;
+}
+.showNav {
+	display: block;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.hideLinks {
+	display: none;
+}
+.centerBtn {
+	float: right;
+}
+.resizeDiv {
+	width: 200px;
+}
+.resizeDivOggettiVenduti {
+	width: 100px;
+}
+
+

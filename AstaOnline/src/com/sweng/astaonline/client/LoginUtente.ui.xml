@@ -1,0 +1,37 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+	.alignText {
+		margin-bottom: 2rem;
+	}
+	.alignBtn {
+		text-align: center;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<div
+			style="width: 70%;  height: auto; padding: 2rem;  margin: auto; border: 2px solid #A9A9A9; border-radius: 10px;">
+			<h2 style="margin-bottom: 2rem; text-align: center"> Login </h2>
+
+			<b:Row >
+				<b:Column size="6" offset="3" styleName="{style.alignText}">
+					<b:TextBox placeholder="Username" ui:field="username" 
+						 alternateSize="XLARGE"></b:TextBox>
+				</b:Column>
+
+			</b:Row>
+			<b:Row>
+				<b:Column size="6" offset="3" styleName="{style.alignText}">
+					<b:PasswordTextBox placeholder="Password" ui:field="password" alternateSize="XLARGE"></b:PasswordTextBox>
+				</b:Column>
+			</b:Row>
+
+			<b:Row styleName="{style.alignBtn}">
+				<b:Button type="INFO" ui:field="loginBtn">Login</b:Button>
+			</b:Row>
+
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

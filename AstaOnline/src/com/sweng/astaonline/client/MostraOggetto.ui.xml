@@ -1,0 +1,74 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+	.resizeImg {
+	width: 400px;
+	margin-left: 5rem;
+	}
+	.pStyle {
+	font-style:italic;
+	font-family:Verdana;
+	font-size: 17px;
+	margin-top: 1rem;
+	}
+	.pStyle2 {
+	font-family:Arial Black;
+	font-size: 17px;
+	margin-top: 3rem;
+	}
+	.textBoxStyle {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	}
+	.p {
+	font-family:Verdana;
+	color:blue;
+	  
+}
+	</ui:style>
+	<g:HTMLPanel>
+	<div ui:field="container" style="margin: 2rem;">
+		<b:Row>
+			<b:Column size="6">
+				<b:Image ui:field="imgBoxBootstrap"
+					styleName="{style.resizeImg}"></b:Image>
+			</b:Column>
+			<b:Column size="6">
+				<b:Heading styleName="font-family:Arial Black;" size="2" ui:field="nomeOggetto"></b:Heading>
+				<b:Paragraph styleName='{style.pStyle}'
+					ui:field="venditoreOggetto"></b:Paragraph>
+				<b:Paragraph styleName='{style.pStyle}'
+					ui:field="descrizioneOggetto"></b:Paragraph>
+				<b:Paragraph styleName='{style.pStyle}'
+					ui:field="prezzoIniziale"></b:Paragraph>
+				<b:Paragraph styleName='{style.pStyle}'
+					ui:field="scadenzaAsta"></b:Paragraph>
+				<b:Paragraph styleName='{style.pStyle}'
+					ui:field="categoriaOggetto"></b:Paragraph>
+					
+				<b:Paragraph styleName='{style.pStyle}'
+					ui:field="offertaAttuale"></b:Paragraph>
+				<b:Paragraph styleName='{style.pStyle}'
+					ui:field="statoOggetto"></b:Paragraph>	
+					
+				<b:Paragraph styleName='{style.pStyle2}'>Fai un'offerta per questo oggetto </b:Paragraph>
+				<b:Button ui:field="offri" type="INFO">Invia</b:Button>
+				<b:TextBox styleName='{style.textBoxStyle}'
+					placeholder="Importo" ui:field="importoOfferto"></b:TextBox>
+			</b:Column>
+		</b:Row>
+		<form>
+ 	<div style="display: block; text-align: left; margin-top:2rem; margin-left:5rem"> 
+    <textarea  ui:field="areaDomanda" rows="2" placeholder="Scrivi la tua domanda"></textarea>
+     <b:Button ui:field="btnDomanda" type="SUCCESS">Inserisci la domanda</b:Button>
+     <hr> </hr>
+  </div>
+</form>
+
+	</div>
+ 
+
+</g:HTMLPanel>
+</ui:UiBinder> 

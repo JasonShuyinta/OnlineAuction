@@ -1,0 +1,2 @@
+serviceClass: com.sweng.astaonline.client.GreetingService
+path: 8ECAB16ACCA0603B21E1370CD4D94ACE.gwt.rpc

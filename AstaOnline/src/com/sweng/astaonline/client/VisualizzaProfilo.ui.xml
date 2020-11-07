@@ -1,0 +1,137 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+	.alignHeading {
+		text-align: center;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<div
+			style="width: 90%;  margin: auto; border: 2px solid #A9A9A9; border-radius: 10px;">
+			<b:Hero>
+				<b:Heading size="2">Il mio Profilo</b:Heading>
+				<b:Row>
+					<b:Column size="3">
+						<b:Row>
+							<b:Column size="1">
+								<b:Label>Nome: </b:Label>
+							</b:Column>
+							<b:Column size="2">
+								<b:Paragraph ui:field="nome" ></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+					
+					<b:Column size="3" offset="1">
+						<b:Row>
+							<b:Column size="2">
+								<b:Label>Cognome:  </b:Label>
+							</b:Column>
+							<b:Column size="1" >
+								<b:Paragraph ui:field="cognome"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+				</b:Row>
+				
+				<b:Row>
+					<b:Column size="3">
+						<b:Row>
+							<b:Column size="1">
+								<b:Label>Username:  </b:Label>
+							</b:Column>
+							<b:Column size="2" >
+								<b:Paragraph ui:field="user"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+					
+					<b:Column size="3" offset="1">
+						<b:Row>
+							<b:Column size="2">
+								<b:Label>Telefono:  </b:Label>
+							</b:Column>
+							<b:Column size="1" >
+								<b:Paragraph ui:field="telefono"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+				</b:Row>
+
+				<b:Row>
+					<b:Column size="3">
+						<b:Row>
+							<b:Column size="1">
+								<b:Label>Email:  </b:Label>
+							</b:Column>
+							<b:Column size="2" >
+								<b:Paragraph ui:field="email"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+					<b:Column size="3" offset="1">
+						<b:Row>
+							<b:Column size="2">
+								<b:Label>Codice Fiscale:  </b:Label>
+							</b:Column>
+							<b:Column size="1" >
+								<b:Paragraph ui:field="codiceFiscale"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>					
+				</b:Row>
+
+				
+				<b:Row>
+					<b:Column size="3">
+						<b:Row>
+							<b:Column size="1">
+								<b:Label>Indirizzo:  </b:Label>
+							</b:Column>
+							<b:Column size="2">
+								<b:Paragraph ui:field="indirizzo"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+					<b:Column size="3" offset="1">
+						<b:Row>
+							<b:Column size="2">
+								<b:Label>Sesso:  </b:Label>
+							</b:Column>
+							<b:Column size="1" >
+								<b:Paragraph ui:field="sesso"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+				</b:Row>
+
+				
+				<b:Row>
+					<b:Column size="3">
+						<b:Row>
+							<b:Column size="1">
+								<b:Label>Data di nascita:  </b:Label>
+							</b:Column>
+							<b:Column size="2" >
+								<b:Paragraph ui:field="data"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+					
+					<b:Column size="3" offset="1">
+						<b:Row>
+							<b:Column size="2">
+								<b:Label>Luogo di nascita:</b:Label>
+							</b:Column>
+							<b:Column size="1">
+								<b:Paragraph ui:field="luogo"></b:Paragraph>
+							</b:Column>
+						</b:Row>
+					</b:Column>
+				</b:Row>		
+			</b:Hero>	
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

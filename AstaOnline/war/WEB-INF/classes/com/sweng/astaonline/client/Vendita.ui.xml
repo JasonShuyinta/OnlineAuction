@@ -1,0 +1,89 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:b2="urn:import:com.github.gwtbootstrap.datetimepicker.client.ui">
+	<ui:style>
+	.addMargin {
+		margin-bottom: 2rem;
+	}
+	
+	.addBtnMargin {
+		margin-top: 2rem;
+		text-align:center;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<div
+			style="width: 90%;  margin: auto; margin-bottom: 3rem; border: 2px solid #A9A9A9; border-radius: 10px;">
+			<b:Hero>
+				<b:Heading size="2" styleName="{style.addMargin}">Vendi il tuo oggetto</b:Heading>
+				<b:Row>
+					<b:Column size="12">
+						<b:Row>
+							<b:Column size="4">
+								<b:Image url="http://placehold.it/300x200" ui:field="imageBox"></b:Image>
+								<b:DropdownButton text="Scegli un oggetto" ui:field="dropdownImg"></b:DropdownButton>
+							</b:Column>
+
+
+							<b:Column size="6">
+								<b:Row>
+									<b:Column size="2">
+										<b:Paragraph>Nome:</b:Paragraph>
+									</b:Column>
+									<b:Column size="4">
+										<b:TextBox ui:field="nome"></b:TextBox>
+									</b:Column>
+								</b:Row>
+
+								<b:Row>
+									<b:Column size="2">
+										<b:Paragraph>Descrizione:</b:Paragraph>
+									</b:Column>
+									<b:Column size="4">
+										<b:TextArea ui:field="descrizione"></b:TextArea>
+									</b:Column>
+								</b:Row>
+
+								<b:Row>
+									<b:Column size="2">
+										<b:Paragraph>Prezzo di Partenza:</b:Paragraph>
+									</b:Column>
+									<b:Column size="4">
+										<b:TextBox ui:field="prezzo"></b:TextBox>
+									</b:Column>
+								</b:Row>
+
+								<b:Row>
+									<b:Column size="2">
+										<b:Paragraph>Scadenza asta: </b:Paragraph>
+									</b:Column>
+									<b:Column size="4">
+										<b2:DateTimeBox format="dd/mm/yyyy hh:ii"
+											autoClose="true" ui:field="dataScadenza"></b2:DateTimeBox>
+									</b:Column>
+								</b:Row>
+
+								<b:Row>
+									<b:Column size="2">
+										<b:Paragraph>Categoria: </b:Paragraph>
+									</b:Column>
+									<b:Column size="4">
+										<b:DropdownButton text="Scegli categoria" ui:field="dropdownCategorie">
+
+										</b:DropdownButton>
+									</b:Column>
+								</b:Row>
+
+							</b:Column>
+						</b:Row>
+					</b:Column>
+				</b:Row>
+				<b:Row styleName="{style.addBtnMargin}">
+					<b:Button type="SUCCESS" size="LARGE" ui:field="sellBtn">Vendi</b:Button>
+				</b:Row>
+			</b:Hero>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

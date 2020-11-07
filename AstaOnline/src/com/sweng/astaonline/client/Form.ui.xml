@@ -1,0 +1,187 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:b2="urn:import:com.github.gwtbootstrap.datepicker.client.ui">
+	<ui:style>
+	.alignText {
+		margin-left: 1rem;
+	}
+	
+	.alignBtn {
+		text-align: center;
+	}
+	.cf {
+	margin-left: 1rem;
+	text-transform: uppercase;
+	}
+	
+	.uppercaseField {
+	margin-left: 1rem; 
+	text-transform: capitalize
+
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<div
+			style="width: 80%; height: auto; padding: 2rem;  margin: auto; border: 2px solid #A9A9A9; border-radius: 10px;">
+			<h2 style="margin-bottom: 1rem; text-align: center"> Registrati </h2>
+			<b:Row>
+				<b:Column size="12">
+					<b:Row>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Nome: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="Mario"
+										styleName="{style.uppercaseField}" ui:field="nome"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Cognome: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="Rossi"
+										styleName="{style.uppercaseField}" ui:field="cognome"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+					</b:Row>
+				</b:Column>
+			</b:Row>
+			<b:Row>
+				<b:Column size="12">
+					<b:Row>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Username: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="MarioRossi99"
+										styleName="{style.alignText}" ui:field="username"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Telefono: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="0123456789"
+										styleName="{style.alignText}" ui:field="telefono"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+					</b:Row>
+				</b:Column>
+			</b:Row>
+
+			<b:Row>
+				<b:Column size="12">
+					<b:Row>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Password: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:PasswordTextBox placeholder="Password"
+										styleName="{style.alignText}" ui:field="password"></b:PasswordTextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Email: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="mariorossi@gmail.com"
+										styleName="{style.alignText}" ui:field="email"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+					</b:Row>
+				</b:Column>
+			</b:Row>
+
+			<b:Row>
+				<b:Column size="12">
+					<b:Row>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Codice Fiscale: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="MR99SMDKI44A944"
+										styleName="{style.cf}" ui:field="codiceFiscale"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Indirizzo: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="Via Roma, 45"
+										styleName="{style.uppercaseField}" ui:field="indirizzo"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+					</b:Row>
+				</b:Column>
+			</b:Row>
+
+			<b:Row>
+				<b:Column size="12">
+					<b:Row>
+						<b:Column size="6">
+							<b:Paragraph>
+								Data di nascita:
+								<b2:DateBox format="dd/mm/yyyy"
+									styleName="{style.alignText}" autoClose="true" ui:field="data" />
+							</b:Paragraph>
+						</b:Column>
+						<b:Column size="6">
+							<b:Row>
+								<b:Column size="1">
+									<b:Paragraph>Luogo di nascita: </b:Paragraph>
+								</b:Column>
+								<b:Column size="2">
+									<b:TextBox placeholder="Bologna, Italia"
+										styleName="{style.uppercaseField}" ui:field="luogo"></b:TextBox>
+								</b:Column>
+							</b:Row>
+						</b:Column>
+					</b:Row>
+				</b:Column>
+			</b:Row>
+
+			<b:Row>
+				<b:Column size="12">
+					<b:Row>
+						<b:Column size="6">
+							<b:ControlLabel styleName="{style.alignText}">Sesso</b:ControlLabel>
+							<b:ControlGroup styleName="{style.alignText}">
+								<b:RadioButton name="sex" ui:field="m">M</b:RadioButton>
+								<b:RadioButton name="sex" ui:field="f">F</b:RadioButton>
+							</b:ControlGroup>
+						</b:Column>
+					</b:Row>
+				</b:Column>
+			</b:Row>
+			<b:Row styleName="{style.alignBtn}">
+				<b:Button type="INFO" ui:field="sendBtn">Invia</b:Button>
+			</b:Row>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+
+	<ui:style>
+
+	.paragraphStyle {
+		display: inline-block;
+	}
+	
+	.p {
+		background-color: greeen;
+	}
+
+	</ui:style>
+	<g:HTMLPanel>
+		<div ui:field="container"
+			style="margin-left: 2rem; margin-right:2rem">
+			<p ui:field="user" style="margin-left: 5rem" class="paragraphStyle"></p>
+			<p ui:field="userQuestion" style="margin-left: 5rem" class="paragraphStyle"></p>
+			<p ui:field="risposta" style="margin-left: 5rem" class="paragraphStyle"></p>
+
+			<div
+				style="display: block; text-align: center; margin-top:2rem; ">
+				<b:TextBox ui:field= "TextRisposta" alternateSize="XXLARGE" 
+				 					placeholder="Scrivi la tua risposta"></b:TextBox>
+				<b:Button type="PRIMARY" ui:field="btnRisposta">Inserisci la risposta</b:Button>
+			
+			</div>
+			<hr style="margin-left: 5rem" > </hr>
+		</div>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

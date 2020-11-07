@@ -1,0 +1,65 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+	.myMargin {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	
+	.brandStyle {
+		margin-top: 1rem;
+		font-weight: bold;
+		font-size: 25px;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	.accountName {
+		float: right;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	
+	.hideNav {
+		display: none;
+	}
+	</ui:style>
+
+	<g:HTMLPanel>
+		<!--  <b:Container styleName='{style.container}'>-->
+			<b:ResponsiveNavbar ui:field="theNavbar">
+				<b:Nav>
+					<b:NavLink styleName='{style.brandStyle}' ui:field="brand"></b:NavLink>
+				</b:Nav>
+				<b:Nav >
+				<b:NavLink ui:field="gestioneCategorie" styleName="{style.hideNav}"></b:NavLink>
+				<b:NavLink ui:field="logoutAdmin" styleName="{style.hideNav}"></b:NavLink>
+				</b:Nav>
+				<b:Nav>
+					<b:Dropdown styleName="{style.hideNav}" text="Categorie"
+						ui:field="categoryDropdown">
+					</b:Dropdown>
+				</b:Nav>				
+				<b:Nav alignment="RIGHT">
+					<b:NavLink ui:field="registrazione"
+						styleName='{style.myMargin}'></b:NavLink>
+					<b:NavLink ui:field="uiLogin"
+						styleName='{style.myMargin}'></b:NavLink>
+				</b:Nav>
+				<b:Nav alignment="RIGHT">
+					<b:Dropdown styleName="{style.hideNav}" text="Benvenuto!"
+						ui:field="userDropdown">
+						<b:NavLink ui:field="sellObj"></b:NavLink>
+						<b:NavLink ui:field="myProfile"></b:NavLink>
+						<b:NavLink ui:field="logout"></b:NavLink>
+					</b:Dropdown>
+				</b:Nav>
+			</b:ResponsiveNavbar>
+	<!--	</b:Container>-->
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

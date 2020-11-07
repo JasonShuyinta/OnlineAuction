@@ -1,0 +1,65 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+	.cap {
+		text-transform: capitalize;
+	} 
+	</ui:style>
+	<g:HTMLPanel>
+		<div
+			style="width: 70%;  height: auto; padding: 2rem;  margin: auto; margin-bottom: 3rem; border: 2px solid #A9A9A9; border-radius: 10px;">		
+			<h2>Inserimento di una categoria</h2>
+			<b:TextBox ui:field="categoriaPadre"
+				styleName="{style.cap}" placeholder="Categoria"></b:TextBox>
+			<b:Button type="SUCCESS" ui:field="btnInsertPadre">Inserisci</b:Button>
+			
+			<h2 >Inserimento di una sottocategoria</h2>
+			<b:DropdownButton text="Scegli una categoria"
+				ui:field="categoryDropdown">
+			</b:DropdownButton>
+			<b:TextBox placeholder="Sottocategoria"
+				styleName="{style.cap}" ui:field="sottocategoria"></b:TextBox>
+			<b:Button type="SUCCESS" ui:field="btnInsert">Inserisci</b:Button>
+			
+			<h2>Mostra sottocategorie</h2>
+			<b:DropdownButton text="Scegli una categoria"
+				ui:field="category">
+			</b:DropdownButton>
+			<b:Button type="INFO" ui:field="btnShow">Mostra</b:Button>
+			<div ui:field="albero" style="margin-top: 1rem;"></div>
+			
+			<h2>Rinomina Categoria</h2>
+			<b:DropdownButton text="Scegli una categoria" dropup="true" ui:field="rinominaCategoria"></b:DropdownButton>
+			<b:TextBox ui:field="nuovoNome" placeholder="Rinomina la categoria" styleName="{style.cap}"></b:TextBox>
+			<b:Button type="WARNING" ui:field="btnRinomina">Rinomina</b:Button>
+			
+			<h2 style="margin-top: 2rem">Elimina categoria</h2>
+			<b:DropdownButton text="Scegli una categoria" dropup="true" ui:field="deleteDropdown"></b:DropdownButton>
+			<b:Button ui:field="delete" type="DANGER">Elimina</b:Button>
+			<div ui:field="msgEliminazione" style="margin-top: 1rem;"></div>
+			
+			<h2 style="margin-top: 2rem">Elimina oggetto</h2>
+			<b:DropdownButton text="Scegli un oggetto" dropup="true" ui:field="eliminaOggetto"></b:DropdownButton>
+			<b:Button ui:field="btnEliminaOggetto" type="DANGER">Elimina</b:Button>
+			
+			
+			<h2 style="margin-top: 2rem">Elimina offerta</h2>
+			<b:DropdownButton text="Scegli un offerta" dropup="true" ui:field="eliminaOfferta"></b:DropdownButton>
+			<b:Button type="DANGER" ui:field="btnEliminaOfferta">Elimina</b:Button>
+			
+			
+			
+			<h2 style="margin-top: 2rem">Elimina Domanda</h2>
+			<b:DropdownButton text="Scegli una domanda" dropup="true" ui:field="eliminaDomanda"></b:DropdownButton>
+			<b:Button type="DANGER" ui:field="btnEliminaDomanda">Elimina</b:Button>
+			
+			<h2 style="margin-top: 2rem">Elimina Risposta</h2>
+			<b:DropdownButton text="Scegli una risposta" dropup="true" ui:field="eliminaRisposta"></b:DropdownButton>
+			<b:Button type="DANGER" ui:field="btnEliminaRisposta">Elimina</b:Button>
+			
+		</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
